@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Artículo - OVEY Technologies</title>
+
+    <!--Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--Barra de Navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg container py-3">
+                    <!-- LOGO + NOMBRE + ESLOGAN -->
+        <a 
+            class="navbar-brand d-flex align-items-center text-decoration-none"
+            href="index.html"
+        >
+
+            <!-- Logo -->
+            <img 
+                src="img/logo-ovey.png"
+                alt="Logo OVEY Technologies"
+                class="me-2"
+                style="height: 55px; width: auto;"
+            >
+
+            <!-- Nombre y eslogan -->
+            <div>
+
+                <!-- Nombre de la empresa -->
+                <div 
+                    class="fw-bold"
+                    style="line-height: 1.1; color: #ffffff;"
+                >
+                    <span style="color: #00bfff;">
+                        OVEY
+                    </span>
+                    TECHNOLOGIES
+                </div>
+
+                <!-- Eslogan -->
+                <small 
+                    style="
+                        display: block;
+                        margin-top: 4px;
+                        font-size: 11px;
+                        letter-spacing: 0.3px;
+                        color: #b8c7d9;
+                    "
+                >
+                    Tecnología que transforma tu futuro
+                </small>
+
+            </div>
+
+        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú -->
+            <div 
+                class="collapse navbar-collapse justify-content-end" 
+                id="navbarNav"
+            >
+                <ul class="navbar-nav align-items-center">
+
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Hardware</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item ms-3"><a href="carrito.html" class="btn btn-cta">🛒 Carrito</a></li>
+                    <li class="nav-item ms-3"><a href="contacto.html" class="btn btn-cta">Solicitar Consultoría</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido del Artículo -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    
+                    <!-- Contenedor general con diseño de tarjeta de lectura -->
+                    <div class="article-container">
+                        
+                        <a href="blog.html" class="text-decoration-none fw-bold mb-4 d-inline-block" style="color: var(--cyan-accent);">&larr; Volver al Blog</a>
+                        
+                        <div>
+                            <span id="art-badge" class="badge bg-primary mb-3">Categoría</span>
+                        </div>
+
+                        <h1 id="art-title" class="article-title">Título del Artículo</h1>
+                        <p class="article-meta border-bottom border-secondary pb-3 mb-4">Publicado por el equipo de ingeniería de OVEY Technologies | 2026</p>
+                        
+                        <!-- Contenedor del texto con las clases unificadas -->
+                        <div id="art-content" class="article-content">
+                            
+                        </div>
+
+                        <!-- Caja de llamada a la acción inferior -->
+                        <div class="mt-5 p-4 rounded" style="background-color: rgba(31, 117, 254, 0.08); border: 1px solid var(--border-dark);">
+                            <h4 class="fw-bold mb-2 text-white">¿Te interesa implementar estas tecnologías en tu empresa?</h4>
+                            <p class="small mb-3" style="color: var(--text-muted);">Nuestros expertos están listos para asesorarte en infraestructura y desarrollo.</p>
+                            <a href="contacto.html" class="btn btn-cta">Solicitar Consultoría</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2026 OVEY Technologies. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="contacto.html" class="me-3">Política de Privacidad</a>
+                    <a href="contacto.html">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Script JavaScript para cambiar el contenido según el ID -->
+    <script>
+        const contenidoArticulos = {
+            "1": {
+                titulo: "El impacto de IPv6 y SLAAC en redes corporativas modernas",
+                badge: "Infraestructura",
+                texto: `
+                    <p class="lead text-white fw-normal">Descubre cómo la implementación de direccionamiento de 128 bits y la autoconfiguración sin estado optimizan la seguridad y escalabilidad en grandes empresas.</p>
+                    <p>El agotamiento progresivo del espacio de direcciones IPv4 ha hecho que la transición hacia IPv6 ya no sea una opción lejana, sino una necesidad operativa fundamental. En las arquitecturas de red corporativas actuales, el protocolo IPv6 proporciona un espacio de direcciones prácticamente ilimitado, eliminando la necesidad de recurrir a NAT (Network Address Translation) complejo y permitiendo que cada dispositivo dentro de la organización posea una ruta IP pública y directa bajo estrictas políticas de seguridad perimetral.</p>
+                    
+                    <h3>El rol clave de SLAAC (Stateless Address Autoconfiguration)</h3>
+                    <p>Una de las ventajas más potentes de IPv6 en entornos empresariales es <strong>SLAAC</strong>. Este mecanismo permite que los dispositivos conectados a la red generen automáticamente sus propias direcciones globales sin necesidad de un servidor DHCPv6 dedicado para la asignación básica de IP.</p>
+                    
+                    <ul class="mb-4">
+                        <li><strong>Reducción de carga administrativa:</strong> Los departamentos de TI automatizan el despliegue de estaciones de trabajo y servidores eficientemente.</li>
+                        <li><strong>Conectividad Plug-and-Play segura:</strong> Los nodos se configuran dinámicamente anunciando los prefijos de red locales mediante routers compatibles.</li>
+                        <li><strong>Optimización de IoT industrial:</strong> Ideal para conectar sensores masivos y sistemas robóticos distribuidos sin cuellos de botella en la asignación de direcciones.</li>
+                    </ul>
+                    
+                    <p>Implementar una estrategia de red basada en IPv6 e infraestructura moderna asegura que tu organización mantenga la escalabilidad, el rendimiento y la compatibilidad con los estándares tecnológicos del futuro.</p>
+                `
+            },
+            "2": {
+                titulo: "Integración de ROS2 y Raspberry Pi 5 en sistemas robóticos",
+                badge: "Robótica & IoT",
+                texto: `
+                    <p class="lead text-white fw-normal">Cómo aprovechar la potencia de procesamiento de la nueva Raspberry Pi 5 combinada con ROS2 para desarrollar brazos robóticos y vehículos autónomos.</p>
+                    <p>La robótica moderna exige plataformas de desarrollo compactas pero capaces de procesar flujos de datos complejos en tiempo real. La llegada de la <strong>Raspberry Pi 5</strong>, impulsada por su arquitectura de hardware optimizada y mayor ancho de banda de memoria, ha transformado el panorama del edge computing para prototipos avanzados e industriales.</p>
+                    
+                    <h3>Por qué ROS2 (Robot Operating System 2) cambia las reglas del juego</h3>
+                    <p>A diferencia de su predecesor, ROS2 fue rediseñado desde cero para entornos de producción de misión crítica, incorporando comunicación basada en DDS (Data Distribution Service). Esto aporta:</p>
+                    
+                    <ul class="mb-4">
+                        <li><strong>Tiempo real determinista:</strong> Comunicación de baja latencia entre nodos de control, motores y sensores.</li>
+                        <li><strong>Soportes multiplataforma robustos:</strong> Integración fluida con sistemas Linux embebidos ejecutados en placas de desarrollo avanzadas.</li>
+                        <li><strong>Control cinemático preciso:</strong> Gestión superior para actuadores, servos y cinemáticas inversas en brazos robóticos de múltiples grados de libertad (DOF).</li>
+                    </ul>
+                    
+                    <p>Combinar hardware de gama alta con arquitecturas de software abiertas permite a las empresas y desarrolladores prototipar soluciones de automatización inteligente con una fracción del costo tradicional.</p>
+                `
+            },
+            "3": {
+                titulo: "Modelos de servicio Cloud: IaaS, PaaS y SaaS en el ecosistema actual",
+                badge: "Cloud Computing",
+                texto: `
+                    <p class="lead text-white fw-normal">Una guía analítica sobre cómo elegir el modelo de computación en nube adecuado para potenciar los recursos tecnológicos de tu organización.</p>
+                    <p>La adopción de la nube se ha convertido en el pilar principal de la eficiencia corporativa. Sin embargo, elegir el modelo operativo correcto entre <strong>IaaS</strong> (Infraestructura como Servicio), <strong>PaaS</strong> (Plataforma como Servicio) y <strong>SaaS</strong> (Software como Servicio) define el éxito financiero y técnico de los proyectos informáticos.</p>
+                    
+                    <h3>Comparativa Estratégica</h3>
+                    <p>Cada capa ofrece diferentes niveles de control y responsabilidad para los equipos de ingeniería:</p>
+                    
+                    <ul class="mb-4">
+                        <li><strong>IaaS (Infraestructura):</strong> Ofrece servidores virtuales, almacenamiento y redes base. Ideal para arquitecturas personalizadas donde el equipo de TI administra sistemas operativos y parches de seguridad.</li>
+                        <li><strong>PaaS (Plataforma):</strong> Proporciona entornos listos para desarrollo y despliegue de código, permitiendo que los desarrolladores se enfoquen puramente en la lógica de programación sin preocuparse por el hardware subyacente.</li>
+                        <li><strong>SaaS (Software):</strong> Aplicaciones totalmente administradas listas para el uso empresarial inmediato mediante navegadores web o APIs integradas.</li>
+                    </ul>
+                    
+                    <p>Analizar las necesidades de escalabilidad y costos operativos de tu organización te permitirá estructurar un ecosistema híbrido o en la nube altamente competitivo.</p>
+                `
+            }
+        };
+
+        // Obtenemos el ID del artículo desde la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const artId = urlParams.get('id') || '1'; // Si no hay ID, carga el 1 por defecto
+
+        // Rellenamos la página con los datos correspondientes
+        if (contenidoArticulos[artId]) {
+            document.getElementById('page-title').innerText = contenidoArticulos[artId].titulo + " - OVEY Technologies";
+            document.getElementById('art-title').innerText = contenidoArticulos[artId].titulo;
+            document.getElementById('art-badge').innerText = contenidoArticulos[artId].badge;
+            document.getElementById('art-content').innerHTML = contenidoArticulos[artId].texto;
+        }
+    </script>
+    
+</body>
+</html>
