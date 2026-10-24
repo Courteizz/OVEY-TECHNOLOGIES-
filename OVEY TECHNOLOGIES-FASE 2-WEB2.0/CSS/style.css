@@ -42,7 +42,7 @@ header {
 .container-fluid {
     padding-top: 2px !important;
     padding-bottom: 2px !important;
-    min-heigth: 0 !important;
+    min-height: 0 !important;
 }
 .navbar-brand {
     padding-top: 0 !important;
@@ -53,7 +53,7 @@ header {
 .navbar-brand small {
     font-size: 11px !important;
     margin-top: 1 px !important;
-    line-heigth: 1 !important;
+    line-height: 1 !important;
 }
 .nav-link {
     color: var(--white) !important;
@@ -70,12 +70,12 @@ header {
 
 /*Alineacion de los botones*/
 .navbar-nav {
-    align-itemns: center !important;
+    align-items: center !important;
 }
 .navbar .btn-cta {
     padding: 4px 12px !important;
     font-size: 12px !important;
-    line-heigth: 1.2 !important;
+    line-height: 1.2 !important;
 }
 .nav-toggler {
     border: 1px solid #ffffff !important;
