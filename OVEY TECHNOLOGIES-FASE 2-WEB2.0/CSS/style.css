@@ -26,6 +26,7 @@ body {
 /* =================================================_
    2. HEADER Y BARRA DE NAVEGACIÓN
    ================================================= */
+/*Alineacion de la barra de navegacion*/
 header {
     background-color: rgba(11, 15, 25, 0.95);
     backdrop-filter: blur(10px);
@@ -33,22 +34,56 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 0 !important;
+    margin: 0 !important;
 }
-
-header .navbar-brand {
-    color: var(--white) !important;
+.navbar,
+.container,
+.container-fluid {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    min-heigth: 0 !important;
 }
-
+.navbar-brand {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+}
+.navbar-brand small {
+    font-size: 11px !important;
+    margin-top: 1 px !important;
+    line-heigth: 1 !important;
+}
 .nav-link {
     color: var(--white) !important;
     font-weight: 500;
-    margin: 0 8px;
+    margin: 0 6px;
     transition: color 0.3s ease;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
 }
-
 .nav-link:hover, 
 .nav-link.active {
     color: var(--cyan-accent) !important;
+}
+
+/*Alineacion de los botones*/
+.navbar-nav {
+    align-itemns: center !important;
+}
+.navbar .btn-cta {
+    padding: 4px 12px !important;
+    font-size: 12px !important;
+    line-heigth: 1.2 !important;
+}
+.nav-toggler {
+    border: 1px solid #ffffff !important;
+    padding: 4px 8px !important;
+    outline: none !important;
+}
+.navbar-toggler-icon {
+   filter: invert(1) brightness (200%) !important;
 }
 
 
