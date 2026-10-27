@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos - Ovey Technologies</title>
+  <title>Producto - Ovey Technologies</title>
+  
+  <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- Barra de navegacion -->
+  <header>
+        <nav class="navbar navbar-expand-lg container">
+                    <!-- LOGO + NOMBRE + ESLOGAN -->
+        <a 
+            class="navbar-brand d-flex align-items-center text-decoration-none"
+            href="index.html"
+        >
+
+            <!-- Logo -->
+            <img 
+                src="img/logo-ovey.png"
+                alt="Logo OVEY Technologies"
+                class="me-2"
+                style="height: 40px; width: auto;"
+            >
+
+            <!-- Nombre y eslogan -->
+            <div>
+
+                <!-- Nombre de la empresa -->
+                <div 
+                    class="fw-bold"
+                    style="line-height: 1; color: #ffffff;"
+                >
+                    <span style="color: #00bfff;">
+                        OVEY
+                    </span>
+                    TECHNOLOGIES
+                </div>
+
+                <!-- Eslogan -->
+                <small 
+                    style="
+                        display: block;
+                        margin-top: 2px;
+                        font-size: 11px;
+                        letter-spacing: 0.3px;
+                        color: #b8c7d9;
+                    "
+                >
+                    Tecnología que transforma tu futuro
+                </small>
+
+            </div>
+
+        </a>
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menú -->
+            <div 
+                class="collapse navbar-collapse justify-content-end" 
+                id="navbarNav"
+            >
+                <ul class="navbar-nav align-items-center">
+
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="productos.html">Hardware</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item ms-3"><a href="carrito.html" class="btn btn-cta">🛒 Carrito</a></li>
+                    <li class="nav-item ms-3"><a href="contacto.html" class="btn btn-cta">Solicitar Consultoría</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+  <main class="container">
+
+    <!-- Categoría 1 — Robots -->
+    <section class="category">
+      <h2>Categoría 1 — Robots</h2>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <a href="producto.html?id=robot-pi5">
+  <img src="img/robot-movil-programable.png" 
+       alt="Robot Móvil Programable Raspberry Pi 5" 
+       class="product-img">
+        </a>
+          <div class="product-info">
+            <h3>Robot Móvil Programable Raspberry Pi 5</h3>
+            <span class="price">$249.99</span>
+            <p>Robot móvil programable basado en Raspberry Pi 5, ideal para proyectos de robótica, IA y automatización.</p>
+          </div>
+        </article>
+
+       <article class="product-card">
+      <a href="producto.html?id=brazo-robotico">
+  <img src="img/brazo-robotico.png" 
+       alt="Brazo Robótico Programable 4DOF" 
+       class="product-img">
+</a>
+      <div class="product-info">
+        <h3>Brazo Robótico Programable 4DOF</h3>
+        <span class="price">$159.99</span>
+        <p>Brazo robótico de 4 grados de libertad para manipulación de objetos y proyectos de automatización.</p>
+      </div>
+    </article>
+
+        <article class="product-card">
+          <a href="producto.html?id=arduino-uno">
+  <img src="img/arduino-uno r3.png" alt="Arduino UNO R3" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>Arduino UNO R3</h3>
+            <span class="price">$24.99</span>
+            <p>Placa de desarrollo para proyectos de robótica, automatización y electrónica.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="producto.html?id=esp32">
+  <img src="img/esp-32.png" alt="ESP32 DevKit V1" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>ESP32 DevKit V1</h3>
+            <span class="price">$14.99</span>
+            <p>Controlador con Wi-Fi y Bluetooth para proyectos IoT, automatización y robótica.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Categoría 2 — Electrónica y accesorios -->
+    <section class="category">
+      <h2>Categoría 2 — Electrónica y accesorios</h2>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <a href="producto.html?id=sensor-ultrasonico">
+  <img src="img/sensor-ultrasonico.png" alt="Sensor Ultrasónico HC-SR04" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>Sensor Ultrasónico HC-SR04</h3>
+            <span class="price">$3.49</span>
+            <p>Sensor de distancia por ultrasonido ideal para detección de obstáculos.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="producto.html?id=dht11">
+  <img src="img/sensor-temperatura-humedad.png" alt="Sensor DHT11" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>Sensor de Temperatura y Humedad DHT11</h3>
+            <span class="price">$2.99</span>
+            <p>Sensor digital para medir temperatura y humedad relativa.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="producto.html?id=relay-1canal">
+  <img src="img/modulo-relay.png" alt="Módulo Relay 1 Canal 5V" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>Módulo Relay 1 Canal 5V</h3>
+            <span class="price">$1.99</span>
+            <p>Módulo de relé para controlar cargas eléctricas mediante microcontroladores.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="producto.html?id=pantalla-lcd">
+  <img src="img/pantalla-lcd.png" alt="Pantalla LCD 16x2 con I2C" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>Pantalla LCD 16×2 con módulo I2C</h3>
+            <span class="price">$6.49</span>
+            <p>Pantalla para visualizar información de proyectos electrónicos con conexión I2C.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="producto.html?id=bateria-litio">
+  <img src="img/bateria-recargable.png" alt="Batería recargable de litio" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>Batería recargable de litio</h3>
+            <span class="price">$3.99</span>
+            <p>Batería recargable para alimentar robots y proyectos electrónicos.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="producto.html?id=cables-jumper">
+  <img src="img/cable-jumper.png" alt="Cables Jumper Macho-Hembra" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>Cables Jumper Macho-Hembra</h3>
+            <span class="price">$4.49</span>
+            <p>Conjunto de cables para realizar conexiones rápidas en prototipos electrónicos.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Categoría 3 — Inteligencia Artificial -->
+    <section class="category">
+      <h2>Categoría 3 — Inteligencia Artificial</h2>
+      <div class="product-grid">
+
+        <article class="product-card">
+         <a href="producto.html?id=camara-ip">
+  <img src="img/camara-ip.png" alt="Cámara IP Wi-Fi 1080P PTZ" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>Cámara IP Wi-Fi 1080P PTZ</h3>
+            <span class="price">$39.99</span>
+            <p>Cámara inteligente con movimiento horizontal y vertical para monitoreo.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="producto.html?id=esp32-cam">
+  <img src="img/modulo-camara.png" alt="Módulo Cámara ESP32-CAM" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>Módulo Cámara ESP32-CAM</h3>
+            <span class="price">$9.99</span>
+            <p>Módulo compacto con Wi-Fi para proyectos de visión artificial e IoT.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="producto.html?id=vl53l0x">
+  <img src="img/sensor-distancia.png" alt="Sensor de Distancia Láser VL53L0X" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>Sensor de Distancia Láser VL53L0X</h3>
+            <span class="price">$12.99</span>
+            <p>Sensor ToF de alta precisión para medición de distancia en aplicaciones inteligentes.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+         <a href="producto.html?id=mq135">
+  <img src="img/sensor-calidad-aire.png" alt="Sensor de Calidad de Aire MQ-135" class="product-img">
+</a>
+          <div class="product-info">
+            <h3>Sensor de Calidad de Aire MQ-135</h3>
+            <span class="price">$4.99</span>
+            <p>Sensor para detectar determinados gases y evaluar la calidad del aire.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+  <!-- Footer -->
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2026 OVEY Technologies. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="politica-privacidad.html" class="me-3">Política de Privacidad</a>
+                    <a href="terminos-condiciones.html">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+
+   <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
