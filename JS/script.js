@@ -522,3 +522,42 @@ function actualizarContadorCarrito() {
 }
 
 actualizarContadorCarrito();
+// ==========================================
+// PROCESAR PEDIDO POR WHATSAPP
+// ==========================================
+
+const whatsappCheckoutBtn = document.getElementById("whatsapp-checkout-btn");
+
+if (whatsappCheckoutBtn) {
+  whatsappCheckoutBtn.addEventListener("click", function () {
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    if (carrito.length === 0) {
+      alert("Tu carrito está vacío. Agrega productos antes de realizar un pedido.");
+      return;
+    }
+
+    // Número de WhatsApp corporativo de OVEY Technologies
+    let numeroWhatsApp = "50377663997"
+
+    let mensaje = "Hola, *OVEY Technologies* . Me gustaría realizar el siguiente pedido desde la pasarela web:\n\n";
+
+    let totalGeneral = 0;
+
+    carrito.forEach((producto, index) => {
+      let subtotal = producto.precio * producto.cantidad;
+      totalGeneral += subtotal;
+      mensaje += `${index + 1}. *${producto.nombre}*\n`;
+      mensaje += `   Cantidad: ${producto.cantidad}\n`;
+      mensaje += `   Subtotal: $${subtotal.toFixed(2)}\n\n`;
+    });
+
+    mensaje += `--------------------------\n`;
+    mensaje += `*Total a pagar: $${totalGeneral.toFixed(2)}*\n\n`;
+    mensaje += `Quedo a la espera de las instrucciones para coordinar el pago y el envío. ¡Gracias!`;
+
+    let mensajeCodificado = encodeURIComponent(mensaje);
+
+    window.open(`https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`, "_blank");
+  });
+}
