@@ -537,7 +537,7 @@ if (whatsappCheckoutBtn) {
       return;
     }
 
-    // Número de WhatsApp corporativo de OVEY Technologies
+    // Número de WhatsApp corporativo.
     let numeroWhatsApp = "50377663997"
 
     let mensaje = "Hola, *OVEY Technologies* . Me gustaría realizar el siguiente pedido desde la pasarela web:\n\n";
